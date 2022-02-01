@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfoli Sara G</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        :root{
+            --oswald: "oswald";
+            --obold: 700;
+            --oreg: 400;
+            --dos: "dosis"
+        }
+        body>header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 100vh;
+            background-color: black;
+        }
+
+
+        h1{
+            font-family: var(--dos);
+            color: white;
+            font-size: 3em;
+            margin: -20px;
+            padding: 40px;
+        }
+        h2{
+            font-family: var(--oswald);
+            font-weight: var(--oreg);
+            color: white;
+            margin: 20px;
+            padding-top: 50px;
+        }
+        h4{
+            font-family: var(--dos);
+            margin: 20px;
+            font-weight: 400;
+            color: white;
+            width: 250px;
+        }
+        p{
+            font-family: var(--dos);
+            margin: 20px;
+            color: white;
+        }
+
+        li>a{
+            font-family: var(--oswald);
+            font-weight: var(--oreg);
+            font-size: 1.5em;
+            color: blue;
+            margin: 20px;
+        }
+
+
+        .caixa{
+            display: flex;
+        }
+
+        .text{
+            width: 30%;
+ 
+        }
+        h3{
+            font-family: var(--oswald);
+            font-weight: var(--obold);
+            color: black;
+            margin-left: 20px;
+        }
+        header>p{
+            font-family: var(--oswald);
+            font-weight: var(--oreg);
+            color: black;
+        }
+        div>.caixaimg{
+            background-color: white;
+        }
+        section{
+            display: flex;
+            margin-top: 100px;
+            margin-left: 10%;
+        }
+        .container{
+            display: flex;
+            float: right;
+            flex-direction: column;
+            width: 70%;
+
+            
+        }
+        #p2{
+            display: flex;
+        }
+        .text{
+            width: 40%;
+        }
+        .caixaimg{
+            width:50%;
+            box-shadow: blue 10px 10px 10px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+ 
+        @media (max-width: 1024px){
+
+            body>header{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 95%;
+                position: relative;
+            }
+            body>main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width: 600px){
+            body{
+                background-color: white;
+            }
+            section{
+                flex-direction: column;
+            }
+            body>header{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: relative;
+            }
+            body>main{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .text{
+                width: 350px;
+                display: flex;
+                align-items: center;
+            }
+            .caixaimg{
+                width: 350px;
+            }
+    }
+        
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="caixanegra">
+            <h1>Sara Gozalbo Mira</h1>
+            <h2>Sobre mi</h2>
+            <h4>Sóc graduada en Belles Arts a la UPV, actualment estudie Gràfica publicitària a l’EASD Alcoi.
+                Aquest és el porfoli on mostrem els projectes realitzats a sistemes de representació avançada i recursos Interactius aplicats a la gràfica a l'easdalcoi.
+            </h4>
+            <p>Professora Magda Arques - arquesm@easdalcoi.es</p>
+            <ul>
+                <li><a href="https://www.instagram.com/sara.gozalbo/">Instagram</a></li>
+                <li><a href="https://github.com/SaraGozalbo97?tab=repositories">GitHub</a></li>
+                <li><a href="https://mail.google.com/mail/u/1/#inbox">Gmail</a></li>
+            </ul>
+        </div>
+        <footer></footer>
+    </header>
+    <main>
+        <div class="container">
+        <section id="p1">
+                <div class="text">
+                    <header>
+                        <h3>p01_lloc_web</h3>
+                        <p>Aquest treball és un treball d'iniciació, aprendrem les primeres nocions amb el programa Visual Studio Code.</p>
+                    </header>
+                </div>
+                <div class="caixaimg">
+                    <img src="img/1lloc web.png" alt="">
+                </div>
+        </section>
+        <section id="p2">
+                <div class="text">
+                    <header>
+                        <h3>p02_img_enllaços</h3>
+                        <p>Al segon treball de l'assignatura aprenem a col·locar imatges a la pàgina, a més d'enllarçar diferents pàgines.</p>
+                    </header>
+                </div>
+                <div class="caixaimg">
+                    <img src="img/2img_enllaços.png" alt="">
+                </div>
+        </section>
+        <section id="p3">
+                <div class="text">
+                    <header>
+                        <h3>p03_img_video_audio</h3>
+                        <p>A aquesta pràctica aprenem a col·locar imatges, videos i audio al còdic html.</p>
+                    </header>
+                </div>
+                <div class="caixaimg">
+                    <img src="img/3img_video_audio.png" alt="">
+                </div>
+        </section>
+        <section id="p4">
+            <div class="text">
+                <header>
+                    <h3>p04_gallery</h3>
+                    <p>Veiem la primera pràctica més personal. Aprenem a muntar una galeria, cada u amb la temàtica elegida, al meu cas animals.</p>
+                </header>
+            </div>
+            <div class="caixaimg">
+                <img src="img/4gallery.png" alt="">
+            </div>
+        </section>
+        <section id="p5">
+            <div class="text">
+                <header>
+                    <h3>p05_grid</h3>
+                    <p>Aquesta prèctica ens serveix per a aprendre a fer ús del grid. Essencial per a distribuir caixes a l'espai de la pantalla.</p>
+                </header>
+            </div>
+            <div class="caixaimg">
+                <img src="img/5grid.png" alt="">
+            </div>
+        </section>
+        <section id="p6">
+            <div class="text">
+                <header>
+                    <h3>p06_neoplasticism</h3>
+                    <p>Posant en pràctica el que hem après a la pràctica anterior, interpretem i creem un quadre del neoplasticisme emprant el grid.</p>
+                </header>
+            </div>
+            <div class="caixaimg">
+                <img src="img/6neoplasticism.png" alt="">
+            </div>
+        </section>
+        <section id="p7">
+            <div class="text">
+                <header>
+                    <h3>p07_porfoli1</h3>
+                    <p>Per posar-nos ja a fer un projecte més personal, elaborem un primer porfoli de l'assignatura emprant com a referència el que ha elaborat la professora, ací mostrem els treballs fets fins aleshores.</p>
+                </header>
+            </div>
+            <div class="caixaimg">
+                <img src="img/7porfoli.jpg" alt="">
+            </div>
+        </section>
+        <section id="p8">
+            <div class="text">
+                <header>
+                    <h3>p08_animació</h3>
+                    <p>Aquest exercici consisteix a introdurir animació a la composició. De nou cada alumne elegeix una tamàtica i treballa a partir d'aquesta incloent-hi un gif i a la web.</p>
+                </header>
+            </div>
+            <div class="caixaimg">
+                <img src="img/8animacio.jpg" alt="">
+            </div>
+        </section>
+    </div>
+    </main>
+
+</body>
+</html>
